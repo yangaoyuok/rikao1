@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <p>
+                <</p><span>无连接</span>
+                    <p><img src="img/1.png" alt=""><img src="img/2.png" alt=""></p>
+        </div>
+        <div class="bodyer">
+            <ul>
+                <li class='one'>
+                    <img src="img/3.png" alt=""> 电源
+                </li>
+                <li class='two'>
+                    <img src="img/4.png" alt=""> 首页
+                </li>
+                <li class='three'>
+                    <img src="img/5.png" alt=""> 菜单
+                </li>
+                <li class='four'>
+                    <img src="img/6.png" alt=""> 截屏
+                </li>
+            </ul>
+            <div>
+                <p class='one1'>电源</p>
+                <p class='two1'>首页</p>
+                <p class='three1'>菜单</p>
+                <p class='four1'>截屏</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.documentElement.style.fontSize = window.innerWidth / 10 + 'px';
+</script>
+<script src='./jquery.min.js'></script>
+<script>
+    $('.one').on('click', function() {
+        $('div .one1').css('display', 'block').siblings().css('display', 'none');
+    })
+    $('.two').on('click', function() {
+        $('div .two1').css('display', 'block').siblings().css('display', 'none');
+    })
+    $('.three').on('click', function() {
+        $('div .three1').css('display', 'block').siblings().css('display', 'none');
+    })
+    $('.four').on('click', function() {
+        $('div .four1').css('display', 'block').siblings().css('display', 'none');
+    })
+</script>
+
+</html>
